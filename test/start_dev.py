@@ -1,3 +1,4 @@
+# windows自动打开应用
 import win32api
 
 win32api.ShellExecute(0, 'open', r'F:\Program Files\Tencent\QQ\Bin\QQ.exe', '', '', 1)
