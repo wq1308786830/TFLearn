@@ -16,7 +16,7 @@ data.sort_values(by='日期', ascending=True, inplace=True)
 data = data[['日期', '开盘', '收盘', '高', '低', '交易量']]
 # data=data.head(60)
 
-data.date = pd.to_datetime(data['日期'])
+data.date = pd.to_datetime(data['日期'], format='%Y年%m月%d日')
 data.date = data.date.apply(lambda x: date2num(x))
 data_mat = data.as_matrix()
 
