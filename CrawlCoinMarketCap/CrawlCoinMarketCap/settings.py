@@ -56,7 +56,7 @@ DUPEFILTER_DEBUG = True
 DOWNLOADER_MIDDLEWARES = {
     # 'CrawlCoinMarketCap.middlewares.CrawlcoinmarketcapDownloaderMiddleware': 543,
     # 'scrapy.downloadermiddleware.useragent.UserAgentMiddleware': None,
-    'CrawlCoinMarketCap.middlewares.ProxyMiddleware': 100,
+    # 'CrawlCoinMarketCap.middlewares.ProxyMiddleware': 100,
     'CrawlCoinMarketCap.randomAgentMiddleware.MyUserAgentMiddleware': 400,
 }
 

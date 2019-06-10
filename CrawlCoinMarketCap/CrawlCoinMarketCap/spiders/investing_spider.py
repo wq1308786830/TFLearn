@@ -18,7 +18,7 @@ class InvestingSpider(scrapy.Spider):
         data = self.parsers.currencies_parser(response, self.allow_domains[0])
 
         for item in data:
-            url = item[0] + '/historical-data' if item[0] else None
+            url = item + '/historical-data' if type(item) == str else None
             if url:
                 yield scrapy.Request(url=url, callback=self.parsers.details_parser)
 

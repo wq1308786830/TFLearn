@@ -15,7 +15,7 @@ from scrapy import signals
 class ProxyMiddleware(object):
     # 代理ip需要的时候到西刺拿[https://www.xicidaili.com/]
     proxy_http_url = "http://124.235.181.175:80"
-    proxy_https_url = "https://183.158.4.25:53281"
+    proxy_https_url = "https://117.84.218.29:8118"
 
     def process_request(self, request, spider):
         if request.url.startswith("http://"):
