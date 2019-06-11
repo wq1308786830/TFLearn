@@ -14,20 +14,22 @@ from scrapy import signals
 
 class ProxyMiddleware(object):
     # 代理ip需要的时候到西刺拿[https://www.xicidaili.com/]
-    proxy_http_url = "http://124.235.181.175:80"
-    proxy_https_url = "https://117.84.218.29:8118"
+    proxy_http_url = None
+    proxy_https_url = None
 
     def process_request(self, request, spider):
+        try:
+            if self.proxy_http_url is None and 'proxy' in request.meta:
+                self.proxy_http_url = request.meta['proxy']
+            if self.proxy_https_url is None and 'proxy' in request.meta:
+                self.proxy_https_url = request.meta['proxy']
+        except Exception as e:
+            print(e)
+
         if request.url.startswith("http://"):
             request.meta['proxy'] = self.proxy_http_url  # http代理
         elif request.url.startswith("https://"):
             request.meta['proxy'] = self.proxy_https_url  # https代理
-
-
-#         # proxy authentication
-#         proxy_user_pass = "USERNAME:PASSWORD"
-#         encoded_user_pass = base64.encodestring(proxy_user_pass)
-#         request.headers['Proxy-Authorization'] = 'Basic ' + encoded_user_pass
 
 
 """

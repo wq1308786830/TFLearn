@@ -5,5 +5,7 @@ from scrapy import cmdline
 
 
 name = 'investing'
-cmd = 'scrapy crawl {0}'.format(name)
+# 查看log级别
+# https://docs.scrapy.org/en/latest/topics/logging.html#topics-logging-levels
+cmd = 'scrapy crawl {0} --loglevel DEBUG'.format(name)
 cmdline.execute(cmd.split())
