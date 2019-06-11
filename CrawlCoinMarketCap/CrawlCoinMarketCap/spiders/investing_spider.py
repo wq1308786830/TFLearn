@@ -8,19 +8,23 @@ from ..parsers import Parsers
 class InvestingSpider(scrapy.Spider):
     name = 'investing'
 
+    proxy_https_url = None
+    meta = {'proxy': proxy_https_url}  # 设置ip代理
+
     allow_domains = ['https://cn.investing.com']
 
-    url = 'https://cn.investing.com/crypto/currencies'
+    start_urls = ['https://www.xicidaili.com/wn/', 'https://cn.investing.com/crypto/currencies']
 
     parsers = Parsers()
 
     def parse(self, response):
-        data = self.parsers.currencies_parser(response, self.allow_domains[0])
+        self.proxy_https_url = self.parsers.proxy_parser(response)
+        if self.proxy_https_url is None:
+            return
+        else:
+            self.meta['proxy'] = self.proxy_https_url
 
-        for item in data:
-            url = item + '/historical-data' if type(item) == str else None
-            if url:
-                yield scrapy.Request(url=url, callback=self.parsers.details_parser)
+        yield scrapy.Request(url=self.start_urls[1], callback=self.parsers.currencies_parser, meta=self.meta)
 
     def start_requests(self):
-        yield scrapy.Request(url=self.url, callback=self.parse)
+        yield scrapy.Request(url=self.start_urls[0], callback=self.parse)

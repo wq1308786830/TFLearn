@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/python
 import re
+import telnetlib
 import time
 
 import scrapy
@@ -18,7 +19,33 @@ class Parsers:
     # 防止excel打开乱码
     encode = 'utf-8-sig'
 
+    HIGH_TYPE = '高匿'
+    MAX_SECONDS = 1
+    proxy_https_url = None
+
+    meta = {'proxy': proxy_https_url}  # 设置ip代理
+
     # excel = ExcelRW()
+
+    def proxy_parser(self, response):
+        proxies = response.css('#ip_list tbody tr')
+        for proxy in proxies[1:]:
+            ip = proxy.css('td:nth-child(2)::text').get().strip()
+            port = proxy.css('td:nth-child(3)::text').get().strip()
+            type_name = proxy.css('td:nth-child(5)::text').get().strip()
+            speed = proxy.css('td:nth-child(7)>div.bar').attrib['title'].get().strip()
+            speed_float = float(re.findall(r'\d+\.\d+', speed)[0])
+            if type_name == self.HIGH_TYPE and speed_float <= self.MAX_SECONDS:
+                try:
+                    # telnet没有异常则是可用代理
+                    telnetlib.Telnet(ip, port)
+                    self.proxy_https_url = 'https://' + ip + ';' + port
+                    self.meta['proxy'] = self.proxy_https_url
+                    print('检测到可用代理：', self.proxy_https_url)
+
+                    return self.proxy_https_url
+                except Exception as e:
+                    print(e)
 
     # 解析解析虚拟货币币种列表
     def currencies_parser(self, response, allow_domain):
@@ -58,7 +85,11 @@ class Parsers:
         data_frame = data_frame.transpose()
         data_frame.to_csv(self.file_path + 'coins_list.csv', encoding=self.encode, index=False, sep=',')
 
-        return data_frame.iloc[:, 0].values
+        coins_url = data_frame.iloc[:, 0].values
+        for item in coins_url:
+            url = item + '/historical-data' if type(item) == str else None
+            if url:
+                yield scrapy.Request(url=url, callback=self.details_parser, meta=self.meta)
 
     # 解析单个币的历史数据请求，获取关键的curr_id和smlID用于获取单个币的所有历史数据
     def details_parser(self, response):
@@ -82,9 +113,9 @@ class Parsers:
             'sort_ord': 'DESC',
             'action': 'historical_data',
         }
-
+        self.meta['full_name'] = whole_name + ',' + full_name
         yield scrapy.FormRequest(url=url, formdata=form_data, callback=self.historical_parser,
-                                 headers=headers, meta={'full_name': whole_name + ',' + full_name})
+                                 headers=headers, meta=self.meta)
 
     # 解析单个币的所有历史数据
     def historical_parser(self, response):
