@@ -28,18 +28,18 @@ class Parsers:
     # excel = ExcelRW()
 
     def proxy_parser(self, response):
-        proxies = response.css('#ip_list tbody tr')
+        proxies = response.css('#ip_list tr')
         for proxy in proxies[1:]:
             ip = proxy.css('td:nth-child(2)::text').get().strip()
             port = proxy.css('td:nth-child(3)::text').get().strip()
             type_name = proxy.css('td:nth-child(5)::text').get().strip()
-            speed = proxy.css('td:nth-child(7)>div.bar').attrib['title'].get().strip()
+            speed = proxy.css('td:nth-child(7)>div.bar').attrib['title'].strip()
             speed_float = float(re.findall(r'\d+\.\d+', speed)[0])
             if type_name == self.HIGH_TYPE and speed_float <= self.MAX_SECONDS:
                 try:
                     # telnet没有异常则是可用代理
-                    telnetlib.Telnet(ip, port)
-                    self.proxy_https_url = 'https://' + ip + ';' + port
+                    telnetlib.Telnet(ip, port, timeout=1)
+                    self.proxy_https_url = 'https://' + ip + ':' + port
                     self.meta['proxy'] = self.proxy_https_url
                     print('检测到可用代理：', self.proxy_https_url)
 
@@ -48,10 +48,11 @@ class Parsers:
                     print(e)
 
     # 解析解析虚拟货币币种列表
-    def currencies_parser(self, response, allow_domain):
+    def currencies_parser(self, response):
         # self.data = []
         print('=========⭐⭐⭐ Parsing list ⭐⭐⭐===========')
 
+        allow_domain = response.meta.get('allow_domain')
         items = response.css('.js-all-crypto-table tbody')
         # for item in items:
         href = items.css('.name a').xpath('./@href').getall()

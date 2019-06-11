@@ -24,6 +24,7 @@ class InvestingSpider(scrapy.Spider):
         else:
             self.meta['proxy'] = self.proxy_https_url
 
+        self.meta['allow_domain'] = self.allow_domains[0]
         yield scrapy.Request(url=self.start_urls[1], callback=self.parsers.currencies_parser, meta=self.meta)
 
     def start_requests(self):
