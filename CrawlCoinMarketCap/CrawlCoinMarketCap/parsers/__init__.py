@@ -79,7 +79,7 @@ class Parsers:
     # 解析单个币的历史数据请求，获取关键的curr_id和smlID用于获取单个币的所有历史数据
     def details_parser(self, response):
         whole_name = response.request.url.split('/')[-2]
-        full_name = response.css('#fullColumn .float_lang_base_1::text').get()
+        full_name = response.css('#fullColumn .float_lang_base_1::text').get().strip()
         script_data = response.css('.fullHeaderTwoColumnPage--content > script:nth-of-type(2)').get()
         match_obj = re.findall(r'\d+', script_data)
 

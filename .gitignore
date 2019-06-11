@@ -2,3 +2,4 @@
 .vscode/
 
 *.pyc
+CrawlCoinMarketCap/files/*.csv
