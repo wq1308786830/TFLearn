@@ -1,4 +1,5 @@
 ﻿链接,名称,符号,价格,市值,成交量（24小时）,交易份额,涨跌（24小时）,涨跌（7日）
+<<<<<<< HEAD
 https://cn.investing.com/crypto/bitcoin,比特币,BTC,"7,917.8",141196774801.19,17641708408.655,28.60%,+2.93%,-0.27%
 https://cn.investing.com/crypto/ethereum,以太坊,ETH,245.15,26206975118.554,7470729679.8405,12.11%,+4.09%,-0.68%
 https://cn.investing.com/crypto/ripple,瑞波币,XRP,0.39395,16722722142.986,1434431442.0513,2.33%,+1.90%,-4.35%
@@ -99,3 +100,105 @@ https://cn.investing.com/crypto/loopring,路印协议,FTM,0.06553,67194296.84098
 ,,PPT,,64381876.855122,9004781.2076881,0.01%,+8.62%,+27.09%
 ,,AION,,62804033.302047,3352221.8195835,0.01%,+5.31%,-1.81%
 ,,LRC,,62406901.663642,30081886.847401,0.05%,+0.52%,+10.92%
+=======
+https://cn.investing.com/crypto/bitcoin,比特币,BTC,"7,907.2",141227631534.48,17834550931.156,28.58%,+2.58%,-0.30%
+https://cn.investing.com/crypto/ethereum,以太坊,ETH,245.3,26293888958.377,7552996409.8005,12.10%,+3.64%,-0.28%
+https://cn.investing.com/crypto/ripple,瑞波币,XRP,0.39065,16682248862.9,1425552624.171,2.28%,+0.26%,-4.63%
+https://cn.investing.com/crypto/litecoin,莱特币,LTC,128.192,8000155404.506,5522315533.2077,8.85%,+9.16%,+23.18%
+https://cn.investing.com/crypto/bitcoin-cash,比特币现金,BCH,388.34,6976366711.9858,1456048570.5572,2.33%,+1.45%,-1.40%
+https://cn.investing.com/crypto/eos,EOS,EOS,6.3384,5864289135.2263,2197732494.6104,3.52%,+1.76%,-4.80%
+https://cn.investing.com/crypto/binance-coin,币安币,BNB,31.583,4514235328.286,463130398.86846,0.74%,+1.85%,+4.62%
+https://cn.investing.com/crypto/bitcoin-sv,Bitcoin SV,BSV,187.85,3364388512.8015,447646006.16175,0.72%,+0.70%,-14.88%
+https://cn.investing.com/crypto/tether,泰达币,USDT,1.00327,3299641597.4032,17919189958.841,28.71%,+0.11%,+1.02%
+https://cn.investing.com/crypto/stellar,恒星币,XLM,0.12182,2364177794.0734,313777885.02153,0.50%,+1.47%,-2.19%
+https://cn.investing.com/crypto/cardano,艾达币,ADA,0.08345,2184575590.1018,123672557.19903,0.20%,+1.98%,-1.67%
+https://cn.investing.com/crypto/tron,波场币,TRX,0.030689,2058197786.426,730604839.63717,1.17%,-1.27%,-9.32%
+https://cn.investing.com/crypto/monero,门罗币,XMR,86.62,1486069900.3734,145796400.23636,0.23%,+2.50%,+0.61%
+https://cn.investing.com/crypto/dash,达世币,DASH,148.17,1322248910.6467,397583577.45452,0.64%,+3.35%,-1.82%
+https://cn.investing.com/crypto/iota,埃欧塔,MIOTA,0.41907,1175080090.288,29752966.43265,0.05%,-0.42%,-3.90%
+https://cn.investing.com/crypto/cosmos,Cosmos,ATOM,5.9757,1147372229.9645,51801534.248845,0.08%,+1.06%,-7.29%
+https://cn.investing.com/crypto/ethereum-classic,以太坊经典,ETC,8.1557,910593969.08406,616306574.85917,0.99%,+0.69%,-8.50%
+https://cn.investing.com/crypto/neo,NEO,NEO,12.048,856700305.47524,467498947.49839,0.75%,-1.97%,-0.24%
+https://cn.investing.com/crypto/tezos,Tezos,XTZ,1.2683,843154807.40573,4757298.6212756,0.01%,+1.03%,-2.86%
+https://cn.investing.com/crypto/nem,新经币,XEM,0.08318,752906599.79134,16723237.864532,0.03%,-0.01%,-1.65%
+https://cn.investing.com/crypto/maker,Maker,MKR,701.62,720192174.095,6544429.3083141,0.01%,+0.13%,+6.68%
+https://cn.investing.com/crypto/ontology,本体币,ONT,1.3948,694746939.61429,185861261.20856,0.30%,-4.09%,+7.42%
+https://cn.investing.com/crypto/zcash,大零币,ZEC,78.31,531804305.66217,293970325.74712,0.47%,-0.34%,-3.80%
+https://cn.investing.com/crypto/crypto-com-chain,Crypto.com Chain,CRO,0.0698,454283550.05472,6440161.8356018,0.01%,-0.81%,-7.07%
+https://cn.investing.com/crypto/bitcoin-gold,比特黄金,BTG,25.264,449611649.92487,32712623.645213,0.05%,-0.80%,-3.17%
+https://cn.investing.com/crypto/vechain,唯链币,VET,0.007635,426651105.82243,18564289.086013,0.03%,+0.47%,+9.07%
+https://cn.investing.com/crypto/basic-attention-token,注意力币,BAT,0.32384,413981918.05289,37090640.063917,0.06%,-0.84%,-4.29%
+https://cn.investing.com/crypto/chainlink,ChainLink,LINK,1.1661,409308741.877,26433969.885319,0.04%,+5.44%,+31.55%
+https://cn.investing.com/crypto/dogecoin,狗狗币,DOGE,0.003068,370101664.05618,67605761.419937,0.11%,+2.29%,-0.70%
+https://cn.investing.com/crypto/usd-coin,USD Coin,USDC,0.993508,340848034.0381,79143811.250881,0.13%,+0.57%,-0.08%
+https://cn.investing.com/crypto/qtum,量子链币,QTUM,3.185,307566510.8667,239914432.06033,0.38%,-1.65%,+4.42%
+https://cn.investing.com/crypto/decred,Decred,DCR,27.123,271789931.32819,1420331.96441,0%,+1.04%,+4.94%
+https://cn.investing.com/crypto/omisego,嫩模币,OMG,1.9782,268867143.64682,125702526.74187,0.20%,+0.92%,-8.27%
+https://cn.investing.com/crypto/aurora,Aurora,AOA,0.0254,262484216.68002,1471922.4928556,0%,-0.35%,+39.16%
+https://cn.investing.com/crypto/bittorrent,BitTorrent,BTT,0.0011933,256348679.84704,55149984.122341,0.09%,+0.13%,-12.14%
+https://cn.investing.com/crypto/trueusd,TrueUSD,TUSD,0.9941,250462099.91256,206750750.98758,0.33%,-0.29%,-0.13%
+https://cn.investing.com/crypto/holo,Holo,HOT,0.001788,249215106.14495,26708811.360324,0.04%,+0.17%,-4.91%
+https://cn.investing.com/crypto/ravencoin,Ravencoin,RVN,0.0647,242288326.49785,24508315.527673,0.04%,+2.37%,-7.88%
+https://cn.investing.com/crypto/waves,波币 ,WAVES,2.4425,240328735.144,31050145.463768,0.05%,+3.64%,+0.96%
+https://cn.investing.com/crypto/lisk,应用链,LSK,2.0326,239056268.20687,8243739.7049891,0.01%,+3.49%,+1.86%
+https://cn.investing.com/crypto/bitcoin-diamond,比特币钻石,BCD,1.18371,222451082.94603,4274013.2205943,0.01%,-2.22%,-4.94%
+https://cn.investing.com/crypto/zilliqa,Zilliqa,ZIL,0.023516,212077927.92434,72024798.708529,0.12%,+5.63%,+10.29%
+https://cn.investing.com/crypto/augur,Augur,REP,18.766,209035934.514,15152129.717971,0.02%,+1.07%,+6.05%
+https://cn.investing.com/crypto/nano,Nano,NANO,1.541,207359544.84445,13939845.693742,0.02%,-0.12%,-0.49%
+https://cn.investing.com/crypto/pundi-x,Pundi X,NPXS,0.000834,203497758.82835,8179281.3285561,0.01%,+2.96%,-6.06%
+https://cn.investing.com/crypto/0x,0x协议,ZRX,0.3235,194207281.34907,25247342.627283,0.04%,-0.52%,+4.56%
+https://cn.investing.com/crypto/komodo,科莫多币,KMD,1.58199,184974910.35552,3647490.5732022,0.01%,-0.90%,+10.98%
+https://cn.investing.com/crypto/icon,ICON,ICX,0.37951,180714910.14194,13291444.497591,0.02%,+2.61%,-0.41%
+https://cn.investing.com/crypto/paxos-standard-token,Paxos Standard Token,PAX,0.9944,178011583.73237,173906930.3653,0.28%,-0.27%,-0.20%
+https://cn.investing.com/crypto/bytecoin-bcn,百特币,BCN,0.000934,170205718.27095,146153.33388045,0%,+2.10%,+1.71%
+https://cn.investing.com/crypto/bitshares,比特股,BTS,0.0613,167530047.28948,12678725.224162,0.02%,-1.42%,+0.89%
+https://cn.investing.com/crypto/huobi-token,火币积分,HT,3.2683,163289709.41423,93350942.848071,0.15%,+5.60%,+7.74%
+https://cn.investing.com/crypto/digibyte,极特币,DGB,0.012685,151992668.22269,3100785.1006195,0%,-5.73%,-12.79%
+https://cn.investing.com/crypto/verge,Verge,XVG,0.00917,149302169.15357,5019998.4258146,0.01%,+4.90%,+2.66%
+https://cn.investing.com/crypto/monacoin,萌奈币,MONA,2.1299,140469328.25015,8610271.1291938,0.01%,-2.02%,-25.06%
+https://cn.investing.com/crypto/bytom,比原链,BTM,0.13757,138641486.20665,16581484.291295,0.03%,-0.61%,+14.80%
+https://cn.investing.com/crypto/iostoken,IOStoken,IOST,0.011344,138197192.17982,51986367.044972,0.08%,-4.18%,+0.34%
+https://cn.investing.com/crypto/aeternity,Aeternity,AE,0.50436,136984561.40906,39521066.307076,0.06%,-3.46%,+2.68%
+https://cn.investing.com/crypto/dent,Dent,DENT,0.0012,134261340.63642,1821752.9302904,0%,0%,+2.26%
+https://cn.investing.com/crypto/steem,斯蒂姆币,STEEM,0.40911,130910221.0357,2244293.6682575,0%,+1.46%,+11.22%
+https://cn.investing.com/crypto/siacoin,云储币,QBIT,0.003147,130880300.15487,194847.62022645,0%,+9.14%,+5.06%
+https://cn.investing.com/crypto/gxchain,GXChain,SC,2.1132,130250397.50561,2261423.4939785,0%,+2.19%,-0.75%
+https://cn.investing.com/crypto/solve,SOLVE,GXC,0.383729,127820187.948,42279324.65137,0.07%,-12.50%,+98.83%
+https://cn.investing.com/crypto/theta,THETA,SOLVE,0.1434,127101781.3672,5768171.9377187,0.01%,+0.52%,+39.09%
+https://cn.investing.com/crypto/enjin-coin,恩金币 ,THETA,0.155427,125602415.07514,15083964.196263,0.02%,+4.75%,+12.55%
+https://cn.investing.com/crypto/metaverse,元界,ENJ,1.6517,122447526.82209,9514423.7478141,0.02%,+3.86%,+8.17%
+https://cn.investing.com/crypto/maximine-coin,Maximine Coin,ETP,0.0414,122405273.25154,19487364.142059,0.03%,+8.42%,+41.38%
+https://cn.investing.com/crypto/thorecoin,ThoreCoin,MXM,975.61,109141475.02026,2662152.9970135,0%,-6.13%,-2.67%
+https://cn.investing.com/crypto/status,Status,THR,0.029511,104387473.78665,115349.74625176,0%,+3.08%,+1.35%
+https://cn.investing.com/crypto/crypto-com,Crypto.com,SNT,6.3374,103286060.78959,21893781.281808,0.04%,+1.40%,+14.54%
+https://cn.investing.com/crypto/ardor,阿朵币,MCO,0.09979,102222141.31976,19690782.032982,0.03%,+5.33%,+6.04%
+https://cn.investing.com/crypto/aelf,aelf,ARDR,0.20282,100638079.32081,2792740.3301063,0%,+1.13%,+21.98%
+https://cn.investing.com/crypto/kucoin-shares,库币,ELF,1.1061,100161994.95514,23429104.477738,0.04%,-1.59%,+5.09%
+https://cn.investing.com/crypto/golem-network-tokens,Golem,KCS,0.101,99892905.735978,13296962.735897,0.02%,+1.95%,+2.13%
+https://cn.investing.com/crypto/abbc-coin,ABBC Coin,GNT,0.202224,98721947.369992,5702832.4944797,0.01%,+8.63%,+16.85%
+https://cn.investing.com/crypto/hypercash,HyperCash,ABBC,2.1821,96928450.132506,49598508.223584,0.08%,-1.05%,-17.85%
+https://cn.investing.com/crypto/stratis,Stratis,HC,0.9849,95623713.27441,8184813.1301536,0.01%,-8.55%,+26.01%
+https://cn.investing.com/crypto/wax,WAX,STRAT,0.0974,94619935.083217,2014544.9667235,0%,+5.11%,+5.61%
+https://cn.investing.com/crypto/waltonchain,沃尔顿链,WAX,2.176,92162648.063075,2097884.2905551,0%,+6.29%,+31.56%
+https://cn.investing.com/crypto/insight-chain,Insight Chain,WTC,0.2484,91325967.327282,6774749.2381782,0.01%,+0.51%,+6.45%
+https://cn.investing.com/crypto/nebulas-token,星云币,HEDG,1.7443,88078705.456005,313469.67442961,0%,+4.66%,+63.03%
+https://cn.investing.com/crypto/maidsafecoin,MaidSafeCoin,INB,0.18762,87981507.512111,2664428.6270565,0%,+7.09%,+7.91%
+https://cn.investing.com/crypto/cryptonex,Cryptonex,NAS,0.9887,85663092.908505,77667838.840781,0.12%,-4.33%,+65.84%
+https://cn.investing.com/crypto/mixin,Mixin,MAID,185.61,85314551.383615,306801.22706135,0%,-1.26%,-14.16%
+https://cn.investing.com/crypto/dai,Dai,CNX,1.00095,83589702.25464,14357687.717026,0.02%,0%,-0.91%
+https://cn.investing.com/crypto/truechain,TrueChain,XIN,1.01,83164367.608734,105689.03429539,0%,+2.23%,-3.41%
+https://cn.investing.com/crypto/zcoin,Zcoin,DAI,9.5773,83053819.942925,50300309.873625,0.08%,+0.14%,+0.64%
+https://cn.investing.com/crypto/project-pai,Project Pai,TRUE,0.049842,80899369.44334,68549166.671702,0.11%,+0.79%,-4.46%
+https://cn.investing.com/crypto/zencash,ZenCash,VEST,10.4858,77935761.228452,298343.92606918,0%,+2.42%,+1.70%
+https://cn.investing.com/crypto/ark,Ark,XZC,0.601,74002164.680239,9282003.2339461,0.01%,+6.63%,+41.21%
+https://cn.investing.com/crypto/nuls,Nuls,PAI,0.92,73315914.698935,3956967.0227291,0.01%,-6.06%,+9.69%
+https://cn.investing.com/crypto/loom-network,Loom Network,FTM,0.08326,69744919.05636,98222340.97392,0.16%,+70.18%,+118.77%
+https://cn.investing.com/crypto/populous,Populous,ZEN,1.2445,69564987.779651,5655398.6835626,0.01%,+6.97%,+4.40%
+https://cn.investing.com/crypto/digixdao,DigixDAO,ARK,32.083,68997373.228603,1854975.2878627,0%,-2.83%,+6.81%
+https://cn.investing.com/crypto/aion,Aion,NULS,0.19663,66585883.474753,30358636.337111,0.05%,-5.11%,+26.04%
+https://cn.investing.com/crypto/decentraland,Decentraland,LOOM,0.0592,65994908.497102,6711626.2249325,0.01%,+6.04%,+10.76%
+,,PPT,,65008550.355289,9449907.9441625,0.02%,+12.70%,+28.66%
+,,DGD,,64463390.7608,2591850.7402089,0%,+2.81%,-0.94%
+,,AION,,62513028.054324,3368790.7986493,0.01%,+4.43%,-2.17%
+,,MANA,,62468288.107924,18228697.304954,0.03%,+0.51%,+13.88%
+>>>>>>> proxy_through_spider
