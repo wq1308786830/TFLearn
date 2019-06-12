@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/python
-import scrapy
-from scrapy import signals
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 import random
 
