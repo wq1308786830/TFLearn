@@ -4,6 +4,7 @@ import re
 import telnetlib
 import time
 
+import requests
 import scrapy
 import numpy as np
 import pandas as pd
@@ -21,6 +22,7 @@ class Parsers:
     MAX_SECONDS = 1
 
     def proxy_parser(self, response):
+        allow_domain = response.meta.get('allow_domain')
         proxies = response.css('#ip_list tr')
         print('开始过滤代理：')
         for proxy in proxies[1:]:
@@ -33,8 +35,9 @@ class Parsers:
             if type_name == self.HIGH_TYPE and speed_float <= self.MAX_SECONDS:
                 proxy_https_url = 'https://' + ip + ':' + port
                 try:
-                    # telnet没有异常则是可用代理，最大不超过1秒
-                    telnetlib.Telnet(ip, port, timeout=1)
+                    # telnet没有异常则是可用代理，最大不超过1.5秒
+                    # telnetlib.Telnet(ip, port, timeout=1.5)
+                    requests.get(allow_domain, proxies={'https': proxy_https_url}, timeout=1.5)
                     print('\n\n✨✨✨检测到可用代理✨✨✨', proxy_https_url)
 
                     return proxy_https_url

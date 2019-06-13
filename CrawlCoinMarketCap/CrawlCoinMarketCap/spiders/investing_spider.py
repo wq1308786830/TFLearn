@@ -24,4 +24,6 @@ class InvestingSpider(scrapy.Spider):
         yield request
 
     def start_requests(self):
-        yield scrapy.Request(url=self.start_urls[0], callback=self.parse)
+        request = scrapy.Request(url=self.start_urls[0], callback=self.parse)
+        request.meta['allow_domain'] = self.allow_domains[0]
+        yield request
