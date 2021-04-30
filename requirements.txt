@@ -82,7 +82,7 @@ tornado==5.0.2
 tqdm==4.32.1
 Twisted==19.2.0
 ujson==1.35
-urllib3==1.25.3
+urllib3==1.25.8
 uvloop==0.12.2
 w3lib==1.20.0
 websockets==5.0.1
