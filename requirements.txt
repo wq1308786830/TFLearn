@@ -62,7 +62,7 @@ queuelib==1.5.0
 requests==2.21.0
 requests-cache==0.5.0
 requests-html==0.9.0
-sanic==0.8.1
+sanic==20.12.6
 Sanic-Cors==0.9.5
 Sanic-Plugins-Framework==0.7.0
 schedule==0.5.0
