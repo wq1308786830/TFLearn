@@ -3,3 +3,4 @@
 
 *.pyc
 CrawlCoinMarketCap/files/*.csv
+aclImdb_v1
