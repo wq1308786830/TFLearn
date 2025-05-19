@@ -14,6 +14,7 @@ from tensorflow.keras import losses
 print(tf.version.VERSION)
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
+""" start 此部分代码只需在首次运行时运行一次，后续运行时可注释掉 start """
 url = "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz"
 
 dataset = tf.keras.utils.get_file("aclImdb_v1", url,
@@ -34,6 +35,8 @@ with open(sample_file) as f:
 
 remove_dir = os.path.join(train_dir, 'unsup')
 shutil.rmtree(remove_dir)
+
+""" end 此部分代码只需在首次运行时运行一次，后续运行时可注释掉 end """
 
 
 @tf.keras.utils.register_keras_serializable(package="Custom")
