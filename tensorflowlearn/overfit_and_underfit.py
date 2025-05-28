@@ -27,7 +27,7 @@ shutil.rmtree(logdir, ignore_errors=True)
 # 本教程的目的不是粒子物理学，因此无需关注数据集的细节。它包含 11,000,000 个样本，每个样本有 28 个特征和一个二元类标签。
 #%%
 # gz = tf.keras.utils.get_file('HIGGS.csv.gz', 'http://mlphysics.ics.uci.edu/data/higgs/HIGGS.csv.gz')
-gz = tf.keras.utils.get_file('HIGGS.csv.gz', r'file:///mnt/d/迅雷下载/HIGGS.csv.gz')
+gz = 'file:///mnt/d/迅雷下载/HIGGS.csv.gz'
 #%%
 FEATURES = 28
 #%% md
