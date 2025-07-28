@@ -16,9 +16,9 @@ response = client.chat.completions.create(
 )
 print(response.choices[0].message.content)
 
-# CUDA_VISIBLE_DEVICES=0 vllm serve ./qwen3-1.7b/ \
+# CUDA_VISIBLE_DEVICES=0 vllm serve Qwen/Qwen3-1.7B \
 #   --port 8888 \
 #   --host 0.0.0.0 \
-#   --gpu-memory-utilization 0.4 \
+#   --gpu-memory-utilization 0.85 \
 #   --max-model-len 4096 \
 #   --served-model-name qwen1.7b
