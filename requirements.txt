@@ -3,3 +3,5 @@ numpy
 pandas
 tensorflow
 tensorflow_datasets
+IPython
+tensorflow-text
