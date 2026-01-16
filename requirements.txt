@@ -86,6 +86,6 @@ urllib3==1.25.3
 uvloop==0.12.2
 w3lib==1.20.0
 websockets==5.0.1
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 xlrd==1.2.0
 zope.interface==4.6.0
